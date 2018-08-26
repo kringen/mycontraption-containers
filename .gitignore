@@ -1,0 +1,4 @@
+*.cer
+*.pem
+*.key
+*.ca-bundle
