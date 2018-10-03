@@ -1,0 +1,18 @@
+[0;1;32m●[0m jupyterNotebook.service - Job that runs the JupyterNotebook service
+   Loaded: loaded (/lib/systemd/system/jupyterNotebook.service; enabled; vendor preset: enabled)
+   Active: [0;1;32mactive (running)[0m since Wed 2018-09-05 21:33:06 UTC; 47min ago
+ Main PID: 23258 (jupyter-noteboo)
+    Tasks: 1 (limit: 4915)
+   CGroup: /system.slice/jupyterNotebook.service
+           └─23258 /usr/bin/python /usr/local/bin/jupyter-notebook --config=/home/erik/.jupyter/jupyter_notebook_config.py
+
+Sep 05 21:58:29 kringdata jupyter-notebook[23258]: [W 21:58:29.113 NotebookApp] Blocking Cross Origin API request for /jupyter/api/sessions.  Origin: https://kringfw.mycontraption.com, Host: 10.0.0.110:9898
+Sep 05 21:58:29 kringdata jupyter-notebook[23258]: [W 21:58:29.113 NotebookApp] Not Found
+Sep 05 21:58:29 kringdata jupyter-notebook[23258]: [W 21:58:29.114 NotebookApp] 404 POST /jupyter/api/sessions (172.17.0.2) 1.75ms referer=https://kringfw.mycontraption.com/jupyter/notebooks/Spark/Loading%20Data%20-%20CSV%2C%20S3%2C%20HDFS.ipynb
+Sep 05 21:58:39 kringdata jupyter-notebook[23258]: [W 21:58:39.477 NotebookApp] Blocking Cross Origin API request for /jupyter/api/sessions.  Origin: https://kringfw.mycontraption.com, Host: 10.0.0.110:9898
+Sep 05 21:58:39 kringdata jupyter-notebook[23258]: [W 21:58:39.477 NotebookApp] Not Found
+Sep 05 21:58:39 kringdata jupyter-notebook[23258]: [W 21:58:39.477 NotebookApp] 404 POST /jupyter/api/sessions (172.17.0.2) 1.60ms referer=https://kringfw.mycontraption.com/jupyter/notebooks/Spark/Loading%20Data%20-%20CSV%2C%20S3%2C%20HDFS.ipynb
+Sep 05 22:19:41 kringdata jupyter-notebook[23258]: [I 22:19:41.573 NotebookApp] 302 GET /jupyter (172.17.0.2) 0.67ms
+Sep 05 22:19:53 kringdata jupyter-notebook[23258]: [W 22:19:53.904 NotebookApp] Blocking Cross Origin API request for /jupyter/api/sessions.  Origin: https://kringfw.mycontraption.com, Host: 10.0.0.110:9898
+Sep 05 22:19:53 kringdata jupyter-notebook[23258]: [W 22:19:53.904 NotebookApp] Not Found
+Sep 05 22:19:53 kringdata jupyter-notebook[23258]: [W 22:19:53.905 NotebookApp] 404 POST /jupyter/api/sessions (172.17.0.2) 1.45ms referer=https://kringfw.mycontraption.com/jupyter/notebooks/Rover/RoverWriteStatus.ipynb

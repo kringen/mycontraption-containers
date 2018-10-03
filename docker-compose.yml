@@ -1,12 +1,15 @@
-version: '1'
+version: '3'
 services:
   kringproxy:
-    image: "kringen/mycontraption:kringproxy"
+    image: "kringproxy:latest"
     ports:
      - "443:443"
     volumes:
      - /etc/ssl:/etc/ssl
+     - /var/www:/var/www
+    links:
+     - kringweb
   kringweb:
-    image: "kringen/mycontraption:kringweb"
+    image: "kringweb:latest"
     ports:
      - "4000:4000"
